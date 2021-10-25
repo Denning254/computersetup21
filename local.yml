@@ -1,0 +1,9 @@
+---
+- host: localhost
+  become: yes
+
+  task:
+  - name: Install python packages
+    pip:
+      name:
+        - bpytop
