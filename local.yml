@@ -2,6 +2,14 @@
   become: true
 
   tasks:
+    name: Install Linux packages
+    apt:
+    name:
+     - python3-pip
+     - node
+     - npm
+     - git
+     - firefox
   - name: Install python packages
     pip:
       name:
