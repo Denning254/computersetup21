@@ -1,11 +1,8 @@
----
+- hosts: workstation
+  become: true
 
-- hosts: localhost
-   connection: local
-   become: true
- 
-   tasks:
-   - name: Install packages
-     pip:
-       name:
-         - bpytop
+  tasks:
+  - name: Install python packages
+    pip:
+      name:
+       - bpytop
