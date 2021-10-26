@@ -1,6 +1,7 @@
----
+
 - hosts: localhost
-  become: yes
+  connection: local
+  become: true
 
   task:
   - name: Install python packages
