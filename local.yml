@@ -31,9 +31,16 @@
       url: https://github.com/VSCodium/vscodium/releases/download/1.61.2/codium_1.61.2-1634689349_amd64.deb
       dest: /home/ubuntutestvm/Downloads/ansible
 
-  - name: install atom from deb file
+  - name: install VSCodium  from deb file
     apt: deb="/home/ubuntutestvm/Downloads/ansible/codium_1.61.2-1634689349_amd64.deb"
 
+  - name: download Google Chrome
+    get_url: 
+      url: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+      dest: /home/ubuntutestvm/Downloads/ansible
+
+  - name: install google chrome
+    apt: deb="/home/ubuntutestvm/Downloads/ansible/google-chrome-stable_current_amd64.deb"
 
   - name: Add PPA Repositories
     apt_repository:
