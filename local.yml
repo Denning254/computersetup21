@@ -23,6 +23,9 @@
       url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
       dest: /home/ubuntutestvm/Downloads/ansible
 
+  - name: install atom from deb file
+    apt: deb="/home/ubuntutestvm/Downloads/ansible/code_*.deb"
+
 
   - name: Add PPA Repositories
     apt_repository:
