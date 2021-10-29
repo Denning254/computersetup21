@@ -51,7 +51,7 @@
       - firefox
       - quickemu
       - gnome-tweaks
-      - atom
+      - terminator
   - name: Install python packages
     pip:
       name:
