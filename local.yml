@@ -11,7 +11,7 @@
     apt:
       name:
       - python3-pip
-      - node
+      - nodejs
       - npm
       - git
       - firefox
