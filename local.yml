@@ -61,6 +61,8 @@
       - terminator
       - chromium-browser
       - gnome-session gdm3
+      - tasksel
+      - ubuntu-desktop
   - name: Install python packages
     pip:
       name:
