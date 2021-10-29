@@ -60,6 +60,7 @@
       - gnome-tweaks
       - terminator
       - chromium-browser
+      - gnome-session gdm3
   - name: Install python packages
     pip:
       name:
