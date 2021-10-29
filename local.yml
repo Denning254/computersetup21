@@ -26,6 +26,14 @@
   - name: install atom from deb file
     apt: deb="/home/ubuntutestvm/Downloads/ansible/code_1.61.2-1634656828_amd64.deb"
 
+  - name: download VSCoduim
+    get_url: 
+      url: https://github.com/VSCodium/vscodium/releases/download/1.61.2/codium_1.61.2-1634689261_amd64.deb
+      dest: /home/ubuntutestvm/Downloads/ansible
+
+  - name: install atom from deb file
+    apt: deb="/home/ubuntutestvm/Downloads/ansible/codium_1.61.2-1634689261_amd64.deb"
+
 
   - name: Add PPA Repositories
     apt_repository:
