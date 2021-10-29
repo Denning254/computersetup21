@@ -17,6 +17,13 @@
   - name: install atom from deb file
     apt: deb="/home/ubuntutestvm/Downloads/ansible/atom-amd64.deb"
 
+
+  - name: download VScode
+    get_url: 
+      url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+      dest: /home/ubuntutestvm/Downloads/ansible
+
+
   - name: Add PPA Repositories
     apt_repository:
         validate_certs: no
