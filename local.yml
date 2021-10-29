@@ -6,6 +6,7 @@
     file:
       path: /home/ubuntutestvm/Downloads/ansible
       state: directory
+      mode: '0440'
 
   - name: download Atom File
     get_url: 
