@@ -63,6 +63,7 @@
       - gnome-session gdm3
       - tasksel
       - ubuntu-desktop
+      - gnome-shell-extensions
   - name: Install python packages
     pip:
       name:
