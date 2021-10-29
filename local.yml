@@ -19,13 +19,7 @@
         validate_certs: no
         repo: 'ppa:flexiondotorg/quickemu'
         state: present
-
-  - name: Add Atom PPA
-    apt_repository:
-        validate_certs: no
-        repo: 'ppa:flexiondotorg/quickemu'
-        state: present
-
+  
   - name: Install Linux packages
     apt:
       name:
