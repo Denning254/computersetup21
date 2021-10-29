@@ -7,7 +7,7 @@
         validate_certs: no
         repo: 'ppa:flexiondotorg/quickemu'
         state: present
-    name: Install Linux packages
+  - name: Install Linux packages
     apt:
     name:
      - python3-pip
@@ -15,7 +15,11 @@
      - npm
      - git
      - firefox
+     - quickemu
+     - gnome-tweaks
   - name: Install python packages
     pip:
       name:
        - bpytop
+       - ansible
+  - name:
