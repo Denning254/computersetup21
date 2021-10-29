@@ -2,6 +2,11 @@
   become: true
 
   tasks:
+  - name: Add PPA Repositories
+      apt_repository:
+        validate_certs: no
+        repo: 'ppa:flexiondotorg/quickemu'
+        state: present
     name: Install Linux packages
     apt:
     name:
