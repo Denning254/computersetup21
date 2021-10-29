@@ -6,7 +6,8 @@
     file:
       path: /home/ubuntutestvm/Downloads/ansible
       state: directory
-      mode: '0440'
+      mode: '0774'
+      recurse: yes
 
   - name: download Atom File
     get_url: 
