@@ -2,16 +2,28 @@
   become: true
 
   tasks:
+  - name: create download/ansible directory
+    file:
+      path: /home/ubuntutestvm/Downloads/ansible
+      state: directory
+
+  - name: download Atom File
+    get_url: 
+      url: https://atom.io/download/deb
+      dest: /home/ubuntutestvm/Downloads/ansible
+
   - name: Add PPA Repositories
     apt_repository:
         validate_certs: no
         repo: 'ppa:flexiondotorg/quickemu'
         state: present
+
   - name: Add Atom PPA
     apt_repository:
         validate_certs: no
         repo: 'ppa:flexiondotorg/quickemu'
         state: present
+
   - name: Install Linux packages
     apt:
       name:
