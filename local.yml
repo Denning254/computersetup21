@@ -52,6 +52,7 @@
       - quickemu
       - gnome-tweaks
       - terminator
+      - chromium-browser
   - name: Install python packages
     pip:
       name:
