@@ -1,22 +1,22 @@
-- hosts: all
+- hosts: localhost
   become: true
 
   tasks:
-  - name: Add PPA Repositories
-      apt_repository:
+  - name: AddPPARepositories
+    apt_repository:
         validate_certs: no
         repo: 'ppa:flexiondotorg/quickemu'
         state: present
   - name: Install Linux packages
     apt:
-    name:
-     - python3-pip
-     - node
-     - npm
-     - git
-     - firefox
-     - quickemu
-     - gnome-tweaks
+      name:
+      - python3-pip
+      - node
+      - npm
+      - git
+      - firefox
+      - quickemu
+      - gnome-tweaks
   - name: Install python packages
     pip:
       name:
