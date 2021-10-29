@@ -24,7 +24,7 @@
       dest: /home/ubuntutestvm/Downloads/ansible
 
   - name: install atom from deb file
-    apt: deb="/home/ubuntutestvm/Downloads/ansible/code_*.deb"
+    apt: deb="/home/ubuntutestvm/Downloads/ansible/code_1.61.2-1634656828_amd64.deb"
 
 
   - name: Add PPA Repositories
