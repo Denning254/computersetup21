@@ -4,7 +4,7 @@
   tasks:
   - name: create download/ansible directory
     file:
-      path: /home/sysops/Downloads/ansible
+      path: /home/sysdevpc/Downloads/ansible
       state: directory
       mode: '0774'
       recurse: yes
